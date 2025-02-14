@@ -44,11 +44,12 @@
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease; /* Smooth transition for zoom effect */
         }
 
+        /* Simple hover effect */
         .gallery-item:hover {
-            transform: scale(1.05);
+            transform: scale(1.1); /* Slight zoom-in effect */
         }
 
         .gallery-item img {
@@ -56,22 +57,6 @@
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
-            transition: opacity 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            opacity: 0.7;
-        }
-
-        .caption {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            color: #fff;
-            font-size: 1.2rem;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 10px;
-            border-radius: 5px;
         }
 
         footer {
@@ -79,23 +64,10 @@
             color: #fff;
             text-align: center;
             padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
 
         footer p {
             font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -109,32 +81,26 @@
 <div class="gallery-container">
     <div class="gallery-item">
         <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Art 1">
-        <div class="caption">Forest Escape</div>
     </div>
     <div class="gallery-item">
         <img src="https://www.w3schools.com/w3images/rocks.jpg" alt="Art 2">
-        <div class="caption">Rocky View</div>
     </div>
     <div class="gallery-item">
         <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Art 3">
-        <div class="caption">City Lights</div>
     </div>
     <div class="gallery-item">
         <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Art 4">
-        <div class="caption">Mountain Majesty</div>
     </div>
     <div class="gallery-item">
         <img src="https://www.w3schools.com/w3images/photographer.jpg" alt="Art 5">
-        <div class="caption">Captured Moment</div>
     </div>
     <div class="gallery-item">
         <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Art 6">
-        <div class="caption">Winter Wonderland</div>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2025 Art Gallery. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    <p>&copy; 2025 Art Gallery. All Rights Reserved.</p>
 </footer>
 
 </body>
